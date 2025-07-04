@@ -62,8 +62,6 @@ const feature7 = [
     },
 ];
 
-
-
 // const feature1 = [
 //     { image: "" },
 //     { video: "" },
