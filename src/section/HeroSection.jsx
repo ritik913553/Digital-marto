@@ -47,20 +47,19 @@ const HeroSection = () => {
                     }
                     transition={{ duration: 0.6, ease: "easeInOut" }}
                     style={{ zIndex: 20 }}
-                    className="flex flex-col justify-center items-center space-y-4 z-20 p-2 sm:p-0"
+                    className="flex flex-col justify-center items-center space-y-4 z-20 sm:p-0"
                 >
-                    <h1 className="sm:w-[70%] w-[100%]  font-black text-2xl sm:text-5xl  sm:pb-5">
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#04bcbe] to-[#056d90] font-semibold text-2xl sm:text-5xl">
-                            We Build Brands  That Click
-                        </span>{" "}
-                        <br />{" "}
-                        <span className="inline-block text-black mt-5 sm:mt-10">
-                            {" "}
-                            For Restaurants, Cafes, Salons, EdTech & Interiors
-                        </span>
+                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] shimmer-text">
+                        We Build Brands That Click
                     </h1>
-                    <p className=" w-[100%] sm:w-[57%] text-center text-gray-900 text-sm sm:text-lg font-medium ">
-                        Were not just a creative agency. Were your
+
+                    <h2 className="sm:w-[70%] w-[100%]  font-black text-[1.5rem] sm:text-4xl  sm:pb-5">
+                        {" "}
+                        For Restaurants, Cafes, Salons, EdTech & Interiors
+                    </h2>
+
+                    <p className=" w-[100%] sm:w-[57%] text-center text-gray-900 text-sm sm:text-lg font-medium p-1 sm:p-0">
+                        We're not just a creative agency. We're your
                         niche-specific growth partner helping you stand out,
                         sell more, and look amazing online.
                     </p>

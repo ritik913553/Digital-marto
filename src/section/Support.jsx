@@ -17,7 +17,7 @@ const Support = () => {
                 <div className="w-full sm:w-1/2 h-[100%]  ">
                     <img
                         className="h-full w-full object-cover mix-blend-multiply"
-                        src="/support2.png"
+                        src="/support.png"
                         alt=""
                     />
                 </div>

@@ -70,6 +70,41 @@ button{
 }
 
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.shimmer-text {
+  position: relative;
+  color: #03414e; /* Base fixed color */
+  background: linear-gradient(
+    90deg,
+    transparent,
+  #1bfbff,
+    #002646,
+    transparent
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 15s infinite linear;
+}
+img, video, p, h1, h2, h3, h4, h5, h6, a, button {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* 002646 */
+
 /* 
 #04bcbe
 #056d90

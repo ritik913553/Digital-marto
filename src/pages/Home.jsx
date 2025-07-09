@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroSection from '../section/HeroSection'
 import Navbar from '../section/Navbar'
 import GalarySection from '../section/GalarySection'
@@ -12,9 +12,11 @@ import GrowingBrandsSection from '../section/GrowingBrandsSection'
 import ContactSection from '../section/ContactSection'
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'DigitalMato | Home';
+  }, [])
   return (
     <div className='relative overflow-x-hidden '>
-      <Navbar />
       <HeroSection  />
       <GalarySection />
       <StatsSection />
@@ -24,7 +26,6 @@ const Home = () => {
       <Support />
       <ClientTestinomial />
       <GrowingBrandsSection />
-      <ContactSection />
     </div>
   )
 }

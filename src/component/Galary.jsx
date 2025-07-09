@@ -27,7 +27,7 @@ const Galary = ({ item }) => {
     return (
         <div
             ref={mediaRef}
-            className="rounded-lg h-32 sm:h-52  shrink-0 overflow-hidden bg-[#AEE2E3] shadow-lg w-full"
+            className="rounded-lg h-32 sm:h-52  shrink-0 overflow-hidden bg-[#7cdddf] shadow-lg w-full"
         >
             {item.image && (
                 <img

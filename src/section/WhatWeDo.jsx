@@ -64,7 +64,9 @@ const WhatWeDo = () => {
                 <div className="rounded-3xl h-full sm:bg-white sm:p-15 mt-15 flex flex-col gap-y-10 ">
                     {services.map((service, index) => (
                         <div
-                            className={`rounded-3xl sm:h-72 hover:scale-105 duration-75 transition-all ease-in-out overflow-hidden flex items-center flex-col sm:flex-row shadow-md bg-gradient-to-r sm:p-5  sm:pr-0 gap-3 ${service.bgGradient}`}
+                            key={index}
+
+                            className={`sm:rounded-3xl rounded-xl sm:h-72 hover:scale-105 duration-75 transition-all ease-in-out overflow-hidden flex items-center flex-col sm:flex-row shadow-md bg-gradient-to-r sm:p-5  sm:pr-0 gap-3 ${service.bgGradient}`}
                         >
                             <div className="sm:w-1/2 p-5 sm:p-0">
                                 <h3

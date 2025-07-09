@@ -38,7 +38,7 @@ const WhatWeProvide = () => {
             <div className="w-full h-96  flex mt-10 gap-x-5">
                 <div className="sm:w-1/5 w-full h-full flex flex-col gap-y-3 ">
                     {workWithData.map((item, index) => (
-                        <div className="flex flex-col gap-y-3 ">
+                        <div key={index} className="flex flex-col gap-y-3 ">
                             <div
                                 className="p-2 w-full h-16  sm:h-16 overflow-y-hidden rounded-lg"
                                 key={index}

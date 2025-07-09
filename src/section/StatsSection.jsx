@@ -33,7 +33,7 @@ const StatsSection = () => {
             </div>
 
             <div className="poppins-font  z-30">
-                <h1 className="text-3xl sm:text-5xl w-full sm:w-[80%] mx-auto leading-10 sm:leading-14 font-bold text-white  shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop:blur-2xl">
+                <h1 className="text-3xl sm:text-5xl w-full sm:w-[80%] mx-auto leading-10 sm:leading-14 font-bold text-white">
                     Growing your business shouldn’t be guesswork.
                 </h1>
                 <h1 className="text-2xl sm:text-4xl text-white font-bold mt-6 sm:mt-2">
