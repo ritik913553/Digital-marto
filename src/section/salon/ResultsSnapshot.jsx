@@ -29,7 +29,7 @@ const ResultsSnapshot = () => {
                             messaging, and social presence built instant trust —
                             and it showed in the results.
                         </p>
-                        <Button title={"Get a Free Visual Checkup"} />
+                        <div className="sm:w-2/3 w-full mx-auto"><Button title={"Get a Free Visual Checkup"} /></div>
                     </div>
                 </div>
             </div>

@@ -38,7 +38,7 @@ const ResultsSnapshot = () => {
                             redesigned their landing experience and automated
                             their email nurturing journey.
                         </p>
-                        <Button title="Get Your Free EdTech Audit" />
+                       <div className="sm:w-2/3 w-full px-0 mx-auto"> <Button title="Get Your Free EdTech Audit" /></div>
                     </div>
                 </div>
             </div>

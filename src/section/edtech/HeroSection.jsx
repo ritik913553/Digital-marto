@@ -33,16 +33,21 @@ const HeroSection = () => {
                         alt="Logo"
                     />
                 </div>
-                <motion.div className="flex flex-col justify-center items-center space-y-5 z-20 mt-15 sm:p-0">
-                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] ">
-                        Smart Branding for Smart Learning.
+                <motion.div initial={{ opacity: 0, y: 100 }}
+                    animate={
+                        hide ? { opacity: 0, y: -100 } : { opacity: 1, y: 0 }
+                    }
+                    transition={{ duration: 0.9, ease: "easeInOut" }}
+                    style={{ zIndex: 20 }} className="flex flex-col justify-center items-center space-y-5 z-20 mt-15 sm:p-0">
+                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] shimmer-text ">
+                        Smart Branding <br /> <span className="sm:text-4xl text-[1.5rem] text-black" >  for Smart Learning.</span>
                     </h1>
 
                     <p className=" w-[100%] sm:w-[57%] text-center text-gray-900 text-sm sm:text-lg font-medium p-1 sm:p-0">
                         We build EdTech brands that engage, educate, and enroll.
                     </p>
                     <div className="flex gap-5 pt-12   justify-center">
-                        <Button title="Book Your Free EdTech Brand Strategy Call" />
+                        <Button title="Book A Free  Strategy Call" />
                     </div>
                 </motion.div>
             </div>

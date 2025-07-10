@@ -92,7 +92,7 @@ const WhatWeDo = () => {
                     What We Do ?
                 </h1>
                 <p className="mt-2 opacity-85 text-md">
-                    We craft stunning, soothing brand identities and social
+                    We craft stunning, soothing brand identities <br /> and social
                     content that drive bookings and repeat visits.
                 </p>
                 <div className="rounded-3xl h-full sm:bg-white sm:p-7 mt-15 flex flex-col gap-y-10 ">

@@ -3,13 +3,13 @@ import Navbar from "./section/Navbar";
 import { FaWhatsappSquare } from "react-icons/fa";
 import React, { Suspense, lazy } from "react";
 import ContactSection from "./section/ContactSection";
+import OurTeam from "./pages/OurTeam";
 const Home = lazy(() => import("./pages/Home"));
 const Restaurants = lazy(() => import("./pages/Restaurants"));
 const Salon = lazy(() => import("./pages/Salon"));
 const Edtech = lazy(() => import("./pages/Edtech"));
 const InteriorDesigne = lazy(() => import("./pages/InteriorDesigne"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
-const ContactUs = lazy(() => import("./pages/ContactUs"));
 
 const App = () => {
     return (
@@ -29,13 +29,12 @@ const App = () => {
                         path="/interior-designe"
                         element={<InteriorDesigne />}
                     />
-                    <Route path="/about-us" element={<AboutUs />} />
-                    <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/our-team" element={<OurTeam />} />
                 </Routes>
             </Suspense>
             <ContactSection />
             <a
-                href={`https://wa.me/+919876543210`}
+                href={`https://wa.me/+918709822926`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-3 right-5 text-6xl cursor-pointer text-green-600  z-100"

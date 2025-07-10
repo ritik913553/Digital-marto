@@ -4,7 +4,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import IndividualMember from "../component/IndividualMember";
 const AboutUs = () => {
     const positions = [
-        "absolute z-100 h-120 w-75 text-center",
+        "absolute z-95 h-120 w-75 text-center",
         "absolute z-90 h-90 w-75 left-30 top-12 text-center",
         "absolute z-80 h-70 w-75 left-60 top-22 text-center",
         "absolute z-70 h-50 w-75 left-80 top-30 text-center",
@@ -15,7 +15,7 @@ const AboutUs = () => {
     const [team, setTeam] = useState([
         {
             name: "Zahid Iqbal",
-            role: "Founder & Creative Director",
+            role: "Founder & CEO",
             image: "https://media.istockphoto.com/id/1204237222/photo/serious-elegant-man-in-beige-suit-eyeglasses-sitting-in-blue-velour-armchair-and-pointing.jpg?s=612x612&w=0&k=20&c=ejnAqnJhzWteSScmWvSINUY4Hij32q4KlewEhcusJQc=",
             description:
                 "Brand strategist, digital growth consultant, and the lead creative mind behind every project.",

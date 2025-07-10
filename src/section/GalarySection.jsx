@@ -2,100 +2,87 @@ import React from "react";
 import Galary from "../component/Galary";
 import { motion } from "framer-motion";
 
-// const feature1 = [
-//     {
-//         image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
-//     },
-//     { video: "/videos/video2.mp4" },
-//     {
-//         image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
-//     },
-//     { video: "/videos/video1.mp4" },
-//     {
-//         image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww",
-//     },
-// ];
-// const feature2 = [
-//     { video: "/videos/video7.mp4" },
-//     {
-//         image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww",
-//     },
-//     { video: "/videos/video6.mp4" },
-//     {
-//         image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
-//     },
-// ];
-// const feature3 = [
-//     {
-//         image: "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW50ZXJpb3JzfGVufDB8fDB8fHww",
-//     },
-//     { video: "/videos/video4.mp4" },
-//     {
-//         image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3JzfGVufDB8fDB8fHww",
-//     },
-//     { video: "/videos/video3.mp4" },
-// ];
-// const feature4 = [
-//     {
-//         image: "https://media.istockphoto.com/id/1678319628/photo/woman-getting-hair-style-and-hair-dry-at-beauty-salon.webp?a=1&b=1&s=612x612&w=0&k=20&c=FWjOAo3Og_FCE_wlbypmfFiWG9FdvUtmNzqN3ITUoHE=",
-//     },
-//     { video: "/videos/video2.mp4" },
-//     {
-//         image: "https://media.istockphoto.com/id/623477902/photo/man-gets-a-haircut-at-his-barber.webp?a=1&b=1&s=612x612&w=0&k=20&c=bq6lyLgA_yEYG4hbw9RgfRwB1U-E_uOO09xqnXc5Yuo=",
-//     },
-// ];
-// const feature5 = [
-//     { video: "/videos/video1.mp4" },
-//     {
-//         image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW50ZXJpb3JzfGVufDB8fDB8fHww",
-//     },
-//     { video: "/videos/video5.mp4" },
-// ];
-// const feature6 = [
-//     {
-//         image: "https://media.istockphoto.com/id/2163878765/photo/indian-asian-teenage-boy-studying-using-computer-headphones-smartphone-for-online-class.webp?a=1&b=1&s=612x612&w=0&k=20&c=vn8S28sFNk64I3VgH2QGohn_BSliojk9_BbNlkhfX_A=",
-//     },
-// ];
-// const feature7 = [
-//     {
-//         image: "https://media.istockphoto.com/id/1225395022/photo/young-adult-working-from-home-during-covid-19-quarantine-lockdown.webp?a=1&b=1&s=612x612&w=0&k=20&c=IoKdbf4k3edU7IWtoP98J4QFxVizVRC6Zrkxzf_2HFE=",
-//     },
-// ];
-
 const feature1 = [
-    { image: "" },
-    { video: "" },
-    { image: "" },
-    { video: "" },
-    { image: "" },
+    {
+        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
+    },
+    {
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww",
+    },
+    {
+        image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
+    },
+    {
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww",
+    },
+    {
+        image: "https://media.istockphoto.com/id/1678319628/photo/woman-getting-hair-style-and-hair-dry-at-beauty-salon.webp?a=1&b=1&s=612x612&w=0&k=20&c=FWjOAo3Og_FCE_wlbypmfFiWG9FdvUtmNzqN3ITUoHE=",
+    },
 ];
 const feature2 = [
-    { video: "" },
-    { image: "" },
-    { video: "" },
-    { image: "" },
+    {
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww",
+    },
+    {
+        image: "https://media.istockphoto.com/id/1642474034/photo/edtech-education-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=L7MR3FUc0fGY2CdAROQq0-V3TXnXWz6apPGFxxoYyQk=",
+    },
+    {
+        image: "https://media.istockphoto.com/id/492596662/photo/overhead-view-of-business-meetings.webp?a=1&b=1&s=612x612&w=0&k=20&c=qnsew2zt0aSuyrD7X5q5R9cVpK06y7k8Kqz3VYvYkto=",
+    },
+    {
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+    },
 ];
 const feature3 = [
-    { image: "" },
-    { video: "" },
-    { image: "" },
-    { video: "" },
+    {
+        image: "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW50ZXJpb3JzfGVufDB8fDB8fHww",
+    },
+    {
+        // video: "https://res.cloudinary.com/dpserjjuz/video/upload/v1752072307/video3_gdktui.mp4",
+        image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2Fsb258ZW58MHx8MHx8fDA%3D",
+    },
+    {
+        image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3JzfGVufDB8fDB8fHww",
+    },
+    {
+        // video: "https://res.cloudinary.com/dpserjjuz/video/upload/v1752072340/video6_tsrghl.mp4",
+        image: "https://media.istockphoto.com/id/1660945979/photo/edtech-education-technology-distance-learning-online-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=WI3MOypLoRt3IT0zGtDUzizgttKn548ljdfhkuzmIr4=",
+    },
 ];
 const feature4 = [
-    { image: "" },
-    { video: "" },
-    { image: "" },
+    {
+        image: "https://media.istockphoto.com/id/1678319628/photo/woman-getting-hair-style-and-hair-dry-at-beauty-salon.webp?a=1&b=1&s=612x612&w=0&k=20&c=FWjOAo3Og_FCE_wlbypmfFiWG9FdvUtmNzqN3ITUoHE=",
+    },
+    {
+        // video: "https://res.cloudinary.com/dpserjjuz/video/upload/v1752072279/video2_admp3l.mp4",
+        image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3JzfGVufDB8fDB8fHww",
+    },
+    {
+        image: "https://media.istockphoto.com/id/623477902/photo/man-gets-a-haircut-at-his-barber.webp?a=1&b=1&s=612x612&w=0&k=20&c=bq6lyLgA_yEYG4hbw9RgfRwB1U-E_uOO09xqnXc5Yuo=",
+    },
 ];
 const feature5 = [
-    { video: "" },
-    { image: "" },
-    { video: "" },
+    {
+        // video: "https://player.cloudinary.com/embed/?cloud_name=dpserjjuz&public_id=video1_qqxuy8&profile=cld-default",
+        image: "https://media.istockphoto.com/id/1225395022/photo/young-adult-working-from-home-during-covid-19-quarantine-lockdown.webp?a=1&b=1&s=612x612&w=0&k=20&c=IoKdbf4k3edU7IWtoP98J4QFxVizVRC6Zrkxzf_2HFE=",
+    },
+    {
+        image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW50ZXJpb3JzfGVufDB8fDB8fHww",
+    },
+    {
+        // video: "https://res.cloudinary.com/dpserjjuz/video/upload/v1752072344/video5_gxq8hz.mp4",
+        image: "https://media.istockphoto.com/id/2163878765/photo/indian-asian-teenage-boy-studying-using-computer-headphones-smartphone-for-online-class.webp?a=1&b=1&s=612x612&w=0&k=20&c=vn8S28sFNk64I3VgH2QGohn_BSliojk9_BbNlkhfX_A=",
+    },
 ];
 const feature6 = [
-    { image: "" },
+    {
+        image: "https://images.unsplash.com/photo-1709715357510-b687304cee3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVhbSUyMG1lZXRpbmd8ZW58MHx8MHx8fDA%3D",
+    },
 ];
 const feature7 = [
-    { image: "" },
+    {
+        image: "https://plus.unsplash.com/premium_photo-1677529496297-fd0174d65941?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhbSUyMG1lZXRpbmd8ZW58MHx8MHx8fDA%3D",
+    },
 ];
 
 const GalarySection = () => {
@@ -148,7 +135,7 @@ const GalarySection = () => {
 
             <div className="relative  z-20 h-full  overflow-hidden">
                 <div className="flex wrap-nowrap gap-3 justify-center items-end h-full p-2 sm:p-10 mr-0 sm:mr-4 overlow-hidden  scrollbar-thin scrollbar-thumb-[#AEE2E3]/50 scrollbar-track-transparent">
-                    <div className="rounded-lg  sm:block shadow-md  sm:w-72 w-32 min-w-[7rem] h-[40vh] sm:h-[90vh] sm:min-w-[14rem] flex items-center justify-center flex-col gap-y-4 overflow-hidden">
+                    <div className="rounded-lg hidden  shadow-md  sm:w-72 w-32 min-w-[7rem] h-[40vh] sm:h-[90vh] sm:min-w-[14rem] sm:flex items-center justify-center flex-col gap-y-4 overflow-hidden">
                         <motion.div
                             className="flex flex-col gap-y-4"
                             animate={{ y: [0, "20%"] }}
@@ -166,7 +153,7 @@ const GalarySection = () => {
                             )}
                         </motion.div>
                     </div>
-                    <div className="rounded-lg shadow-md sm:w-72 w-32 min-w-[7rem] h-[50vh] sm:h-[100vh] sm:min-w-[14rem] flex items-center justify-center flex-col gap-y-4 overflow-hidden">
+                    <div className="rounded-lg hidden shadow-md sm:w-72 w-32 min-w-[7rem] h-[50vh] sm:h-[100vh] sm:min-w-[14rem] sm:flex items-center justify-center flex-col gap-y-4 overflow-hidden">
                         <motion.div
                             className="flex flex-col gap-y-4"
                             animate={{ y: [0, "-20%"] }}
@@ -177,9 +164,11 @@ const GalarySection = () => {
                                 ease: "linear",
                             }}
                         >
-                            {[...feature5, ...feature5,...feature5].map((item, index) => (
-                                <Galary item={item} key={index} />
-                            ))}
+                            {[...feature5, ...feature5, ...feature5].map(
+                                (item, index) => (
+                                    <Galary item={item} key={index} />
+                                )
+                            )}
                         </motion.div>
                     </div>
                     <div className="rounded-lg shadow-md sm:w-72 w-32 min-w-[7rem] h-[70vh] sm:h-[120vh] sm:min-w-[14rem] flex items-center justify-center flex-col gap-y-4 overflow-hidden">
@@ -193,9 +182,11 @@ const GalarySection = () => {
                                 ease: "linear",
                             }}
                         >
-                            {[...feature2, ...feature2,...feature2].map((item, index) => (
-                                <Galary item={item} key={index} />
-                            ))}
+                            {[...feature2, ...feature2, ...feature2].map(
+                                (item, index) => (
+                                    <Galary item={item} key={index} />
+                                )
+                            )}
                         </motion.div>
                     </div>
                     <div className="rounded-lg  shadow-md sm:w-72 w-32 min-w-[7rem] h-[100vh] sm:h-[150vh] sm:min-w-[14rem] flex items-center justify-center flex-col gap-y-4 overflow-hidden">
@@ -227,12 +218,14 @@ const GalarySection = () => {
                                 ease: "linear",
                             }}
                         >
-                            {[...feature3, ...feature3,...feature3].map((item, index) => (
-                                <Galary item={item} key={index} />
-                            ))}
+                            {[...feature3, ...feature3, ...feature3].map(
+                                (item, index) => (
+                                    <Galary item={item} key={index} />
+                                )
+                            )}
                         </motion.div>
                     </div>
-                    <div className="rounded-lg shadow-md sm:w-72 w-32 min-w-[7rem]  h-[50vh] sm:h-[100vh] sm:min-w-[14rem] flex items-center justify-center flex-col gap-y-4 overflow-hidden">
+                    <div className="rounded-lg hidden shadow-md sm:w-72 w-32 min-w-[7rem]  h-[50vh] sm:h-[100vh] sm:min-w-[14rem] sm:flex items-center justify-center flex-col gap-y-4 overflow-hidden">
                         <motion.div
                             className="flex flex-col gap-y-4"
                             animate={{ y: [0, "-20%"] }}
@@ -243,12 +236,14 @@ const GalarySection = () => {
                                 ease: "linear",
                             }}
                         >
-                            {[...feature4, ...feature4,...feature4].map((item, index) => (
-                                <Galary item={item} key={index} />
-                            ))}
+                            {[...feature4, ...feature4, ...feature4].map(
+                                (item, index) => (
+                                    <Galary item={item} key={index} />
+                                )
+                            )}
                         </motion.div>
                     </div>
-                    <div className="rounded-lg shadow-md sm:w-72 w-32 min-w-[7rem]  h-[40vh] sm:h-[90vh] sm:min-w-[14rem] flex items-center justify-center flex-col gap-y-4 overflow-hidden">
+                    <div className="rounded-lg hidden  shadow-md sm:w-72 w-32 min-w-[7rem]  h-[40vh] sm:h-[90vh] sm:min-w-[14rem] sm:flex items-center justify-center flex-col gap-y-4 overflow-hidden">
                         <motion.div
                             className="flex flex-col gap-y-4"
                             animate={{ y: [0, "20%"] }}

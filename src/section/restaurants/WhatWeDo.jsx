@@ -72,7 +72,7 @@ const services = [
   },
   {
     icon: <FaVideo className="text-3xl" />,
-    title: "Food Photography & Reels",
+    title: "Social Media & Reels",
     description:
       "High-end visuals that make your dishes irresistible online.",
     image: [
@@ -96,9 +96,9 @@ const WhatWeDo = () => {
                 <h1 className="text-4xl  bg-clip-text text-transparent bg-linear-to-r from-[#04bcbe] to-[#056d90] font-bold">
                     What We Do ?
                 </h1>
-                <p className="mt-2 opacity-85 text-md">
-                    We help restaurants & cafes build standout brands,
-                    scroll-stopping content, and seamless websites that drive
+                <p className="mt-2 opacity-85 text-md ">
+                    We help restaurants & cafes build standout brands,<br />
+                    scroll-stopping content,  and seamless websites that drive
                     real bookings.
                 </p>
                 <div className="rounded-3xl h-full sm:bg-white sm:p-7 mt-15 flex flex-col gap-y-10 ">
@@ -135,7 +135,7 @@ const WhatWeDo = () => {
                                                 : ["0%", "-50%"],
                                         }}
                                         transition={{
-                                            duration: 8,
+                                            duration: 10,
                                             ease: "linear",
                                             repeat: Infinity,
                                             repeatType: "loop",

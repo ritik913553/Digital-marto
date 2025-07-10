@@ -37,28 +37,24 @@ const HeroSection = () => {
                     />
                 </div>
                 <motion.div
-                    // initial={{ opacity: 0, y: 100 }}
-                    // animate={
-                    //     hide ? { opacity: 0, y: -100 } : { opacity: 1, y: 0 }
-                    // }
-                    // transition={{ duration: 0.6, ease: "easeInOut" }}
-                    // style={{ zIndex: 20 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={
+                        hide ? { opacity: 0, y: -100 } : { opacity: 1, y: 0 }
+                    }
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    style={{ zIndex: 20 }}
                     className="flex flex-col justify-center items-center space-y-5 z-20 mt-15 sm:p-0"
                 >
-                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] ">
-                      Turn Tables with Brand-First Marketing.
+                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] shimmer-text">
+                      Turn Tables with <br /> <span className="text-black sm:text-4xl text-[1.5rem] mt-2">Brand-First Marketing</span> 
                     </h1>
 
-                    {/* <h2 className="sm:w-[70%] w-[100%]  font-black text-[1.5rem] sm:text-4xl  sm:pb-5">
-                        {" "}
-                        For Restaurants, Cafes, Salons, EdTech & Interiors
-                    </h2> */}
 
                     <p className=" w-[100%] sm:w-[57%] text-center text-gray-900 text-sm sm:text-lg font-medium p-1 sm:p-0">
                       From dine-in to online-build a restaurant brand that tastes as good as it looks.
                     </p>
                     <div className="flex gap-5 pt-12   justify-center">
-                        <Button title="Book Your Free Strategy Call" />
+                        <Button title="Lets Build Your Brand" />
                     </div>
                 </motion.div>
             </div>

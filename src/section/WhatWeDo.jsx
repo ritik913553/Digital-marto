@@ -6,6 +6,7 @@ import {
     FaChartLine,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Button from "../component/Button";
 
 const services = [
     {
@@ -15,9 +16,9 @@ const services = [
             "Modern, mobile-first websites tailored for your industry.",
         image: [
             "/whatWeDo/web1.png",
-            "/whatWeDo/web2.webp",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/deeafe227510341.684140a34cfad.png",
             "/whatWeDo/web3.webp",
-            "/whatWeDo/web4.webp",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/60af0d226732389.68340fecdfc2c.png",
         ],
         bgGradient:
             "bg-[radial-gradient(circle,_rgba(255,247,251,1)_0%,_rgba(224,191,202,1)_100%)]",
@@ -28,30 +29,51 @@ const services = [
         title: "Branding & Design",
         description:
             "Logos, menus, packaging—everything that makes your brand memorable.",
-        image: ["/whatWeDo/designe.png","/whatWeDo/designe1.webp","/whatWeDo/designe2.webp","/whatWeDo/designe3.webp","/whatWeDo/designe4.webp"],
-        bgGradient: "bg-[radial-gradient(circle,_rgba(246,255,252,1)_0%,_rgba(174,225,232,1)_100%)]",
+        image: [
+            "/whatWeDo/designe.png",
+            "/whatWeDo/designe1.webp",
+            "/whatWeDo/designe2.webp",
+            "/whatWeDo/designe3.webp",
+            "/whatWeDo/designe4.webp",
+        ],
+        bgGradient:
+            "bg-[radial-gradient(circle,_rgba(246,255,252,1)_0%,_rgba(174,225,232,1)_100%)]",
         textColor: "text-[#02A6B2]",
     },
     {
         icon: <FaVideo className="text-3xl " />,
         title: "Social Media & Reels",
         description: "Engaging content that drives bookings and builds trust.",
-        image: ["/whatWeDo/social.png","/whatWeDo/social1.webp","/whatWeDo/social2.png","/whatWeDo/social3.png"],
-        bgGradient: "bg-[radial-gradient(circle,_rgba(255,175,97,1)_0%,_rgba(252,234,220,1)_100%)]",
+        image: [
+            "/whatWeDo/social.png",
+            "/whatWeDo/social1.webp",
+            "/whatWeDo/social2.png",
+            "/whatWeDo/social3.png",
+        ],
+        bgGradient:
+            "bg-[radial-gradient(circle,_rgba(255,175,97,1)_0%,_rgba(252,234,220,1)_100%)]",
         textColor: "text-[#F86709]",
     },
     {
         icon: <FaChartLine className="text-3xl " />,
         title: "Growth Campaigns",
         description: "Lead gen, ads, and SEO that actually convert.",
-        image: ["/whatWeDo/seo.png","/whatWeDo/seo1.webp","/whatWeDo/seo2.png","/whatWeDo/seo3.png","/whatWeDo/seo4.png"],
-        bgGradient: "bg-[radial-gradient(circle,_rgba(246,255,252,1)_0%,_rgba(114,242,165,1)_100%)]",
+        image: [
+            "/whatWeDo/seo.png",
+            "/whatWeDo/seo1.webp",
+            "/whatWeDo/seo2.png",
+            "/whatWeDo/seo3.png",
+            "/whatWeDo/seo4.png",
+        ],
+        bgGradient:
+            "bg-[radial-gradient(circle,_rgba(246,255,252,1)_0%,_rgba(114,242,165,1)_100%)]",
         textColor: "text-[#1A8244]",
     },
 ];
 
 const WhatWeDo = () => {
-    const isSmallScreen = typeof window !== "undefined" && window.innerWidth < 640;
+    const isSmallScreen =
+        typeof window !== "undefined" && window.innerWidth < 640;
     return (
         <div className="poppins-font bg-gray-100 min-h-screen  sm:p-0 p-5 ">
             <div className="poppins-font min-h-screen  max-w-4xl py-20 mx-auto w-full">
@@ -65,7 +87,6 @@ const WhatWeDo = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-
                             className={`sm:rounded-3xl rounded-xl sm:h-72 hover:scale-105 duration-75 transition-all ease-in-out overflow-hidden flex items-center flex-col sm:flex-row shadow-md bg-gradient-to-r sm:p-5  sm:pr-0 gap-3 ${service.bgGradient}`}
                         >
                             <div className="sm:w-1/2 p-5 sm:p-0">
@@ -89,11 +110,13 @@ const WhatWeDo = () => {
                                 <div className="p-2 h-full">
                                     <motion.div
                                         className="flex flex-col h-52 sm:h-full w-full gap-5"
-                                          animate={{
-                                            y: isSmallScreen ? ["0%", "-250%"] : ["0%", "-50%"]
+                                        animate={{
+                                            y: isSmallScreen
+                                                ? ["0%", "-250%"]
+                                                : ["0%", "-50%"],
                                         }}
                                         transition={{
-                                            duration:8,
+                                            duration: 8,
                                             ease: "linear",
                                             repeat: Infinity,
                                             repeatType: "loop",
@@ -116,6 +139,9 @@ const WhatWeDo = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="w-72 mt-10 mx-auto">
+                    <Button title={"Book A Free Strategy Call"} />
                 </div>
             </div>
         </div>

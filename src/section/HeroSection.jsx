@@ -45,7 +45,7 @@ const HeroSection = () => {
                     animate={
                         hide ? { opacity: 0, y: -100 } : { opacity: 1, y: 0 }
                     }
-                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    transition={{ duration: 0.9, ease: "easeInOut" }}
                     style={{ zIndex: 20 }}
                     className="flex flex-col justify-center items-center space-y-4 z-20 sm:p-0"
                 >

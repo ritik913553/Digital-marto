@@ -53,7 +53,32 @@ const Navbar = () => {
                 </a>
                 <div className="hidden  sm:flex justify-between w-full pl-20 items-center ">
                     <ul className="flex items-center gap-8 font-medium  text-sm">
-                        <li  onMouseEnter={() => setShowServices(true)}>
+                       
+                        <li
+                            className={`${current === "/" ? "border-b-2" : ""}`}
+                        >
+                            <Link
+                                to="/"
+                                className="px-3 py-2 hover:bg-gray-200 rounded-full duration-400  transition-all"
+                            >
+                                Home
+                            </Link>
+                        </li>
+                         <li
+                            className={`${
+                                current === "/our-team" ? "border-b-2" : ""
+                            }`}
+                        >
+                            <Link
+                                to="/our-team"
+                                className="px-3 py-2 hover:bg-gray-200 rounded-full duration-400  transition-all"
+                            >
+                                Our Team
+                            </Link>
+                        </li>
+                        
+                       
+                         <li  onMouseEnter={() => setShowServices(true)}>
                             <Link
                                 to="/"
                                 className=" px-3 py-2 flex items-center gap-x-2 hover:bg-gray-200 rounded-full duration-400  transition-all "
@@ -61,12 +86,12 @@ const Navbar = () => {
                                     top: showServices ? "5rem" : "auto",
                                 }}
                             >
-                                Services <FaAngleDown />
+                                Industries <FaAngleDown />
                             </Link>
                             {showServices && (
                                 <div
                                     onMouseLeave={() => setShowServices(false)}
-                                    className="bg-gray-100 w-64  p-10 absolute top-20 rounded-xl"
+                                    className="bg-gray-100 w-64 z-100  p-10 absolute top-20 rounded-xl"
                                 >
                                     <ul className="flex flex-col gap-y-3 ">
                                         <li
@@ -98,7 +123,7 @@ const Navbar = () => {
                                                 }
                                                 to="/salon"
                                             >
-                                                Saloon & Spa
+                                                Salon & Spa
                                             </Link>
                                         </li>
                                         <li
@@ -130,50 +155,18 @@ const Navbar = () => {
                                                 }
                                                 to="/edtech"
                                             >
-                                                EdTech Brands
+                                                EdTech 
                                             </Link>
                                         </li>
                                     </ul>
                                 </div>
                             )}
                         </li>
-                        <li
-                            className={`${current === "/" ? "border-b-2" : ""}`}
-                        >
-                            <Link
-                                to="/"
-                                className="px-3 py-2 hover:bg-gray-200 rounded-full duration-400  transition-all"
-                            >
-                                Home
-                            </Link>
-                        </li>
-                        <li
-                            className={`${
-                                current === "/contact-us" ? "border-b-2" : ""
-                            }`}
-                        >
-                            <Link
-                                to="/contact-us"
-                                className="px-3 py-2 hover:bg-gray-200 rounded-full duration-400  transition-all"
-                            >
-                                Contact Us
-                            </Link>
-                        </li>
-                        <li
-                            className={`${
-                                current === "/about-us" ? "border-b-2" : ""
-                            }`}
-                        >
-                            <Link
-                                to="/about-us"
-                                className="px-3 py-2 hover:bg-gray-200 rounded-full duration-400  transition-all"
-                            >
-                                About Us
-                            </Link>
-                        </li>
+                       
+                        
                     </ul>
                     <div className="flex gap-x-5">
-                        <Button title="Get Started" />
+                        <Button title="Book A Demo" />
                     </div>
                 </div>
                 {!mobileNavOpen ? (

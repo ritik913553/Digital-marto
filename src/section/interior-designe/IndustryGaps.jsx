@@ -5,28 +5,28 @@ import {motion} from 'framer-motion'
 const IndustryGaps = () => {
     const gapPoints = [
         {
-            icon: <Ban size={30} className="text-[#03414e]" />,
+            icon: <Ban size={30} className="text-red-500" />,
             title: "Outdated or Templated Websites",
             desc: "Cookie-cutter templates fail to reflect your premium design sensibility — and lose trust with high-end clients.",
         },
         {
-            icon: <ImageIcon size={30} className="text-[#03414e]" />,
+            icon: <ImageIcon size={30} className="text-orange-700" />,
             title: "Incoherent Visual Language",
             desc: "Mismatch between your work and your brand colors, fonts, or social media design creates confusion and weakens appeal.",
         },
         {
-            icon: <Sparkles size={30} className="text-[#03414e]" />,
+            icon: <Sparkles size={30} className="text-yellow-700" />,
             title: "No Content Strategy",
             desc: "Gorgeous work left unseen. Without a social or ad strategy, your designs aren’t driving leads.",
         },
     ];
 
     return (
-        <section className="relative w-full bg-gradient-to-b  to-white py-20 px-6 sm:px-16">
+        <section className="relative w-full bg-gradient-to-b from-[#A4DFE0] to-white py-20 px-6 sm:px-16">
             <div className="max-w-5xl mx-auto ">
                 {/* Heading */}
-                <h2 className="text-4xl sm:text-4xl font-bold text-[#012646] mb-10">
-                    Why Your Online Presence Doesn’t Match Your Portfolio ?
+                <h2 className="text-4xl sm:text-4xl font-bold bg-clip-text text-transparent bg-linear-to-r from-[#04bcbe] to-[#056d90] mb-10">
+                    Why Your Online Presence <br /> Doesn’t Match Your Portfolio ?
                 </h2>
 
                 {/* Cards */}
@@ -61,7 +61,7 @@ const IndustryGaps = () => {
                                         ease: "linear",
                                     }}
                                     key={index}
-                                    className="flex  flex-col items-start h-full justify-center  bg-transparent backdrop-blur-md border-1 border-[#AEE2E3]  rounded-lg p-3 sm:p-5 transition-transform duration-300 hover:scale-105  sm:shadow-[3px_3px_2px_2px_#AEE2E3] shadow-[1px_1px_1px_1px_#AEE2E3] gap-y-2"
+                                    className="flex  flex-col items-start h-full justify-center     bg-gradient-to-b from-[#21b7b9] to-white backdrop-blur-md border-1 border-[#AEE2E3]  rounded-lg p-3 sm:p-5 transition-transform duration-300 hover:scale-105  sm:shadow-[3px_3px_2px_2px_#AEE2E3] shadow-[1px_1px_1px_1px_#AEE2E3] gap-y-2"
                                 >
                                     <div className="mb-4">{item.icon}</div>
                                     <h1 className="text-2xl  font-semibold">
@@ -76,11 +76,7 @@ const IndustryGaps = () => {
                     })}
                 </div>
 
-                <p className="text-[#03414e] text-base sm:text-lg leading-relaxed mt-20 mx-auto">
-                    Great design speaks for itself — but only if your brand
-                    gives it a voice. Let’s align your digital presence with the
-                    level of craft you deliver in every space.
-                </p>
+                
             </div>
         </section>
     );

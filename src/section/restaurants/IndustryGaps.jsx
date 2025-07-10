@@ -4,27 +4,27 @@ import { motion } from "framer-motion";
 const IndustryGaps = () => {
     const gapPoints = [
         {
-            icon: <Ban size={30} className="text-[#03414e]" />,
+            icon: <Ban size={30} className="text-[#d62c26]" />,
             title: "Outdated Menus & Visuals",
             desc: "Static PDFs and inconsistent branding weaken trust before guests even arrive.",
         },
         {
-            icon: <ImageIcon size={30} className="text-[#03414e]" />,
+            icon: <ImageIcon size={30} className="text-orange-700" />,
             title: "Inconsistent Instagram",
             desc: "Low-quality posts and unclear messaging lose hungry customers fast.",
         },
         {
-            icon: <Sparkles size={30} className="text-[#03414e]" />,
+            icon: <Sparkles size={30} className="text-yellow-700" />,
             title: "No Online Bookings",
             desc: "Missing integrations mean missed reservations and lost revenue.",
         },
     ];
 
     return (
-        <section className="relative w-full bg-gradient-to-b  to-white py-20 px-6 sm:px-16">
+        <section className="relative w-full bg-gradient-to-b from-[#A4DFE0] to-white   py-20 px-6 sm:px-16">
             <div className="max-w-5xl mx-auto ">
                 {/* Heading */}
-                <h2 className="text-4xl sm:text-4xl font-bold text-[#012646] mb-10">
+                <h2 className="text-4xl bg-clip-text text-transparent bg-linear-to-r from-[#04bcbe] to-[#056d90] sm:text-4xl font-bold  mb-10">
                     Why Most Restaurant Marketing Falls Flat ?
                 </h2>
 
@@ -60,7 +60,7 @@ const IndustryGaps = () => {
                                         ease: "linear",
                                     }}
                                     key={index}
-                                    className="flex  flex-col items-start h-full justify-center  bg-transparent backdrop-blur-md border-1 border-[#AEE2E3]  rounded-lg p-3 sm:p-5 transition-transform duration-300 hover:scale-105  sm:shadow-[3px_3px_2px_2px_#AEE2E3] shadow-[1px_1px_1px_1px_#AEE2E3] gap-y-2"
+                                    className="flex  flex-col items-start h-full justify-center bg-gradient-to-b from-[#21b7b9] to-white backdrop-blur-md border-1 border-[#AEE2E3]  rounded-lg p-3 sm:p-5 transition-transform duration-300 hover:scale-105  sm:shadow-[3px_3px_2px_2px_#AEE2E3] shadow-[1px_1px_1px_1px_#AEE2E3] gap-y-2"
                                 >
                                     <div className="mb-4">{item.icon}</div>
                                     <h1 className="text-2xl  font-semibold">
@@ -75,10 +75,7 @@ const IndustryGaps = () => {
                     })}
                 </div>
 
-                <p className="text-[#03414e] text-base sm:text-lg leading-relaxed mt-20 mx-auto">
-                    Most restaurant marketing is a recipe for confusion, not
-                    conversion.
-                </p>
+               
             </div>
         </section>
     );

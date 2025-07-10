@@ -29,9 +29,9 @@ const ResultsSnapshot = () => {
                             <HighlightLoop text="2× More Reservations" type={"highlight"} /> in Just 6 Weeks
                         </h2>
                         <p className="text-md my-6">
-                           <HighlightLoop text=" Cafe Bloom" type={"underline"} /> doubled their online reservations after launching a fresh brand identity and a scroll-stopping Instagram content strategy. By aligning aesthetic appeal with data-driven tactics, we helped them turn traffic into tables.
+                           <HighlightLoop text="The Toast Story" type={"underline"} /> doubled their online reservations after launching a fresh brand identity and a scroll-stopping Instagram content strategy. By aligning aesthetic appeal with data-driven tactics, we helped them turn traffic into tables.
                         </p>
-                        <Button title={"Hungry for more orders? Book your free strategy call"} />
+                       <div className="sm:w-2/3 w-full mx-auto"> <Button title={" Book Your Free Strategy Call"} /></div>
                     </div>
                 </div>
             </div>

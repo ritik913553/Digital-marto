@@ -40,7 +40,7 @@ const services = [
     },
     {
         icon: <FaMobileAlt className="text-3xl" />,
-        title: "Learning App UI/UX",
+        title: "Custom e-Learning  Websites",
         description:
             "Streamlined app interfaces designed for usability, retention, and satisfaction.",
         image: [
@@ -54,7 +54,7 @@ const services = [
     },
     {
         icon: <FaBullhorn className="text-3xl" />,
-        title: "Meta & YouTube Ad Funnels",
+        title: "Meta Ad Funnels",
         description:
             "Targeted ad creatives and landing flows that turn scrolls into student signups.",
         image: ["/edtech/ads1.png", "/edtech/ads2.png", "/edtech/ads3.png"],
@@ -62,20 +62,7 @@ const services = [
             "bg-[radial-gradient(circle,_rgba(255,252,240,1)_0%,_rgba(255,226,172,1)_100%)]",
         textColor: "text-[#D97706]",
     },
-    {
-        icon: <FaEnvelope className="text-3xl" />,
-        title: "Email + WhatsApp Nurture Flows",
-        description:
-            "Automated follow-ups and reminders that keep learners engaged and ready to enroll.",
-        image: [
-            "/edtech/email1.png",
-            "/edtech/email2.png",
-            "/edtech/email3.png",
-        ],
-        bgGradient:
-            "bg-[radial-gradient(circle,_rgba(250,255,250,1)_0%,_rgba(186,255,204,1)_100%)]",
-        textColor: "text-[#16A34A]",
-    },
+   
 ];
 
 const WhatWeDo = () => {
@@ -88,7 +75,7 @@ const WhatWeDo = () => {
                     What We Do ?
                 </h1>
                 <p className="mt-2 opacity-85 text-md">
-                    From e-learning UI to performance creatives, we help EdTech
+                    From e-learning UI to performance creatives, <br /> we help EdTech
                     companies turn interest into enrollment.
                 </p>
                 <div className="rounded-3xl h-full sm:bg-white sm:p-7 mt-15 flex flex-col gap-y-10 ">

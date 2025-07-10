@@ -33,9 +33,21 @@ const HeroSection = () => {
                         alt="Logo"
                     />
                 </div>
-                <motion.div className="flex flex-col justify-center items-center space-y-5 z-20 mt-15 sm:p-0">
-                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] ">
-                        Style That Sells. Presence That Books.
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={
+                        hide ? { opacity: 0, y: -100 } : { opacity: 1, y: 0 }
+                    }
+                    transition={{ duration: 0.9, ease: "easeInOut" }}
+                    style={{ zIndex: 20 }}
+                    className="flex flex-col justify-center items-center space-y-5 z-20 mt-15 sm:p-0"
+                >
+                    <h1 className="relative inline-block font-semibold text-[2.7rem] sm:text-5xl leading-12 text-[#047B96] shimmer-text ">
+                        Style That Sells <br />{" "}
+                        <span className="text-black mt-2 inline-block text-[1.5rem] sm:text-4xl">
+                            {" "}
+                            Presence That Books.
+                        </span>
                     </h1>
 
                     <p className=" w-[100%] sm:w-[57%] text-center text-gray-900 text-sm sm:text-lg font-medium p-1 sm:p-0">

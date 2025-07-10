@@ -19,11 +19,27 @@ const MobileNav = ({ setMobileNavOpen }) => {
             className="mt-4 poppins-font text-lg pb-10 font-bold flex flex-col gap-y-5 p-1  "
         >
             <ul className="flex flex-col gap-y-5">
+                 <Link
+                    onClick={() => setMobileNavOpen(false)}
+                    to="/"
+                    className={`${current === "/" ? "text-[#0488A0]" : ""}`}
+                >
+                    Home
+                </Link>
+               <Link
+                    to={"/our-team"}
+                    onClick={() => setMobileNavOpen(false)}
+                    className={`${
+                        current === "/our-team" ? "text-[#0488A0]" : ""
+                    }`}
+                >
+                    Our Team
+                </Link>
                 <li
                     className="flex  py-2  items-center gap-x-3 cursor-pointer"
                     onClick={toggleOpen}
                 >
-                    Services <FaAngleDown />
+                    Industries <FaAngleDown />
                 </li>
                 {isOpen && (
                     <div className="flex flex-col gap-y-3 ml-7">
@@ -36,7 +52,7 @@ const MobileNav = ({ setMobileNavOpen }) => {
                                     : ""
                             } `}
                         >
-                            Restaurants
+                            Restaurants & Cafes
                         </Link>
 
                         <Link
@@ -58,7 +74,7 @@ const MobileNav = ({ setMobileNavOpen }) => {
                                     : ""
                             } `}
                         >
-                            Interior Designers
+                            Interior Designe Studios
                         </Link>
 
                         <Link
@@ -68,35 +84,12 @@ const MobileNav = ({ setMobileNavOpen }) => {
                                 current === "/edtech" ? "text-[#0488A0]" : ""
                             } `}
                         >
-                            EdTech Startups
+                            EdTech 
                         </Link>
                     </div>
                 )}
-                <Link
-                    onClick={() => setMobileNavOpen(false)}
-                    to="/"
-                    className={`${current === "/" ? "text-[#0488A0]" : ""}`}
-                >
-                    Home
-                </Link>
-                <Link
-                    to={"/contact-us"}
-                    onClick={() => setMobileNavOpen(false)}
-                    className={`${
-                        current === "/contact-us" ? "text-[#0488A0]" : ""
-                    }`}
-                >
-                    Contact Us
-                </Link>
-                <Link
-                    to={"/about-us"}
-                    onClick={() => setMobileNavOpen(false)}
-                    className={`${
-                        current === "/about-us" ? "text-[#0488A0]" : ""
-                    }`}
-                >
-                    About Us
-                </Link>
+               
+               
             </ul>
             <Button title="Get Started" />
         </motion.div>

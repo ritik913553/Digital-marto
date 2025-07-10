@@ -29,7 +29,7 @@ const ResultsSnapshot = () => {
                     <div className="sm:w-[80%] px-5 sm:px-10 sm:p-0 mt-20 sm:mt-0">
                         <h2 className="text-3xl font-semibold">
                             <HighlightLoop
-                                text="4.5× More Inquiries"
+                                text="3× More Inquiries"
                                 type={"highlight"}
                             />{" "}
                             in Just 30 Days
@@ -44,7 +44,7 @@ const ResultsSnapshot = () => {
                             saw a dramatic spike in high-intent client
                             inquiries.
                         </p>
-                        <Button title="Free Interior Brand Review" />
+                        <div className="sm:w-1/3 w-full  mx-auto"><Button title="Get Started" /></div>
 
                     </div>
                 </div>

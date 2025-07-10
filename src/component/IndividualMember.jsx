@@ -11,7 +11,7 @@ const IndividualMember = ({ member, setIndividualOpen }) => {
                 <RxCross1 />
             </span>
             <h1 className="text-center text-5xl mt-10 sm:mt-0">
-                {member.name} ,<span className="text-2xl"> {member.role}</span>
+                {member.name} <span className="text-2xl"> {member.role}</span>
             </h1>
             <div className="flex sm:flex-row flex-col h-full mt-5">
                 <div className="sm:w-1/2 h-full">
