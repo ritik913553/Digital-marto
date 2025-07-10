@@ -2,7 +2,7 @@ import React from "react";
 
 const testimonials = [
     {
-        name: "/testinomial/ritik.png",
+        name: "Joeshp Doe",
         role: "Founder, BloomBakery.in",
         quote: "I needed a website that felt as warm and personal as my cakes. The team nailed it — it’s mobile-first, fast, and beautiful.",
         avatar: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
@@ -10,7 +10,7 @@ const testimonials = [
         metric: "⏱️ Site launched in 5 days",
     },
     {
-        name: "/testinomial/ananaya.png",
+        name: "Ananaya Pandey",
         role: "Owner, Café Fernweh",
         quote: "They helped me rebrand completely — from logo to packaging. Now my café actually looks as premium as the coffee tastes.",
         avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
@@ -18,7 +18,7 @@ const testimonials = [
         metric: "🎨 Brand kit delivered in 3 days",
     },
     {
-        name: "/testinomial/rani.png",
+        name: "Rani Roi",
         role: "Nutrition Coach @Rani",
         quote: "Their reels and posts doubled my engagement in 2 weeks. I even got 3 new coaching clients from Instagram.",
         avatar: "https://media.istockphoto.com/id/2060433249/photo/photo-of-young-girl-wearing-t-shirt-isolated-yellow-background-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=hk99PC5UEh5LemwxdHqRKrFCVEu2eKuL4W9t0n74mfU=",
@@ -26,7 +26,7 @@ const testimonials = [
         metric: "📈 +92% IG reach",
     },
     {
-        name: "/testinomial/manav.png",
+        name: "John Doe",
         role: "Digital Product Marketer",
         quote: "We spent less, but reached more. Their SEO and paid ads strategy brought us leads at half the cost.Amazing!",
         avatar: "https://media.istockphoto.com/id/1303206644/photo/portrait-of-smiling-caucasian-man-pose-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=akRiOpll6XSlduMj09n9Zm11SsRpAjtdr85GbGJ99uM=",
@@ -139,12 +139,8 @@ const ClientTestinomial = () => {
                                         "{item.quote}"
                                     </p>
 
-                                    <div className="flex flex-col items-start justify-end gap-y-0 overflow-hidden">
-                                        <img
-                                            className="scale-160 -ml-10 sm:-ml-7 group-hover:brightness-0 group-hover:invert transition-all duration-300"
-                                            src={item.name}
-                                            alt=""
-                                        />
+                                    <div className="flex flex-col items-start justify-center gap-y-0 overflow-hidden">
+                                       <h1 className="text-xl font-semibold group-hover:text-white">{item.name}</h1>
                                         <p className="text-sm text-glow group-hover:text-white transition-colors duration-300">
                                             {item.role}
                                         </p>
